@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "seven";
+    src: 
+         url('./assets/seven_segment-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+body{
+       
+
+background-color: #20bf55;
+
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+max-width: 100%;
+
+}
+#container
+{
+margin:auto;
+height: 100%;
+max-width: 100%;
+padding-top: 10%;
+}
+
+#headingMain
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#mainDisplay
+{
+background-color: #a8af7b;
+width: 97.5%;
+height: 60px;
+font-size: 55px;
+font-family: "seven" ;
+}
+
+.numpad
+{
+    background-color: white;
+    font-size: 20px;
+}
+.function
+{
+    background-color: rgb(33, 26, 26);
+    color: white;
+    font-size: 20px;
+}
+
+.clear
+{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+input[type="button"]
+{ 
+    border-radius: 15%;
+    width: 23.5%;
+    height: 50px;
+}
+
+form
+{
+    background-color: #535353;
+    width: 300px;
+    margin: 20px auto;
+    padding: 1%;
+}
+
+footer
+{
+    text-align: right;
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" ></script>
+</head>
+<body>
+<div id="container">
+
+   <div id="mainDiv">
+
+    <h1 id="headingMain">
+        Calculator
+    </h1>
+    <form name="formMain" action="">
+       <input type="text" name="Display" id="mainDisplay">
+       <br>
+       <br>
+        <input type="button" class="clear" value="AC" onclick="formMain.Display.value=''">
+        <input type="button" class="function" value="+/-" onclick="toggleSign()">
+        <input type= "button" class="function" value="%" onclick="percentage1()">
+        <input type="button" class="function" value="/"onclick="div()">
+       <br>
+        <input type="button" id="value1" class="numpad" value="1" onclick="formMain.Display.value+=1" >
+        <input type="button" id="value2" class="numpad" value="2" onclick="formMain.Display.value+=2">
+        <input type="button" id="value3" class="numpad" value="3" onclick="formMain.Display.value+=3">
+        <input type="button" class="function" value="X" onclick="mult()">
+        <br>
+        <input type="button" id="value4" class="numpad" value="4" onclick="formMain.Display.value+=4">
+        <input type="button" id="value5" class="numpad" value="5" onclick="formMain.Display.value+=5">
+        <input type="button" id="value6" class="numpad" value="6" onclick="formMain.Display.value+=6">
+        <input type="button" class="function" value="-" onclick="sub()">
+        <br>
+        <input type="button" id="value7" class="numpad" value="7" onclick="formMain.Display.value+=7">
+        <input type="button" id="value8" class="numpad" value="8" onclick="formMain.Display.value+=8">
+        <input type="button" id="value9" class="numpad" value="9" onclick="formMain.Display.value+=9">
+        <input type="button" class="function" value="+" onclick="add()">
+        <br>
+        <input type="button" id="value00" class="numpad" value="00" onclick="formMain.Display.value+= '00'">
+        <input type="button" id="value0" class="numpad" value="0" onclick="formMain.Display.value+=0">
+        <input type="button" id="valuePer" class="numpad" value="." onclick=period()>
+        <input type="button" class="function" value="=" onclick="formMain.Display.value=eval(formMain.Display.value)">
+    </form>
+   </div>
+</div>
+<br><br>
+<footer>
+    <hr>
+    Muhammad Ahsan <br>
+    Muhammadan.Ahsan@gmail.com <br>
+    +92 3352272242 <br>
+    <a href="https://github.com/m-ihsan" target="_blank">Github(m-ihsan)</a>
+
+</footer>
+</body>
+</html>
